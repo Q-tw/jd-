@@ -1,0 +1,396 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+  color: #333333;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  /* 设置a标签的高亮背景色  手指按住的时候会出现 */
+  -webkit-tap-highlight-color: transparent;
+  color: #666;
+}
+a:active {
+  outline: 0;
+}
+a:active {
+  color: #006699;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+  border: 0;
+  outline: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none outside none;
+}
+h1,
+h2,
+h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cccccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+* {
+  /*移动端禁止出现水平方向滚动条 都要设置box-sizing:border-box 为了让盒子设置了边框padding不会加的盒子的大小*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 样式初始化 */
+body {
+  background-color: #f7f7f7;
+}
+#header {
+  display: flex;
+  height: 32px;
+}
+#header > span {
+  line-height: 32px;
+  color: #d00397;
+}
+#header > h4 {
+  margin: 0 auto;
+  line-height: 32px;
+}
+#header > i {
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon/my.png) no-repeat;
+  background-size: 25px 25px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#slide img {
+  width: 100%;
+}
+#nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav > ul > li {
+  flex: 1;
+  margin-top: 5px;
+}
+#nav > ul > li > a > img {
+  width: 120px;
+}
+#living > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+#living > ul > li {
+  flex: 1;
+  border: 1px solid #e6e6e6;
+}
+#living > ul > li > a > img {
+  width: 90px;
+}
+#parent {
+  margin-top: 10px;
+  display: flex;
+}
+#parent > .laft {
+  flex: 1;
+  border-right: 1px solid #e6e6e6;
+}
+#parent > .laft img {
+  width: 100%;
+}
+#parent > .right {
+  flex: 1;
+}
+#parent > .right > img {
+  width: 100%;
+}
+#parent > .right > img:nth-child(1) {
+  border-bottom: 1px solid #e6e6e6;
+}
+#hot {
+  margin-top: 10px;
+}
+#hot > h4 {
+  padding: 5px 0px 0px 5px;
+}
+#hot > ul > li {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#hot > ul > li > a img {
+  width: 100%;
+}
+#journalism {
+  margin-top: 10px;
+}
+#journalism > .laft {
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#journalism > .right {
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+#journalism > ul > li {
+  margin-top: 10px;
+}
+#journalism > ul > li > a > img {
+  width: 100%;
+}
+#journalism > ul > li > a > div {
+  background-color: #fff;
+}
+#journalism > ul > li > a > div > p {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+#journalism > ul > li:nth-child(1) {
+  margin-top: 0px;
+}
+#journalism .a {
+  color: #d3079e;
+  border-bottom: 2px solid #d3079e;
+}
+#footer > P {
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+#footer > div {
+  background-color: #d00397;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer > div > .left > a {
+  line-height: 30px;
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+}
+#footer > div > .right {
+  color: #fff;
+  line-height: 30px;
+  margin-right: 10px;
+}
